@@ -9,3 +9,9 @@ Use `-v /tmp/gradle:/root/.gradle` for faster subsequent builds
 `$ adb devices` - Allow devices
 
 `$ ionic cordova run android` - Run on a connected device
+
+## Compile
+
+`$ ionic cordova build --release android` - Compile APK
+
+The apk should be at: `/path/to/your/app/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk`
