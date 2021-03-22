@@ -4,7 +4,7 @@ WORKDIR /android
 
 RUN apt update && apt install -y wget zip unzip curl git
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && apt install -y nodejs
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - && apt install -y nodejs
 
 RUN wget https://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip && \
     unzip *.zip && \
